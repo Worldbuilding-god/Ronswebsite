@@ -1,11 +1,44 @@
+/*
+rgb(234, 242, 239) = l
+rgb(50, 13, 109) = d
+*/
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rubik+Beastly&family=Rubik+Gemstones&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap');
+.metal-mania-regular {
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}  
+.rubik-wet-paint-regular {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.rubik-beastly-regular {
+    font-family: "Rubik Beastly", system-ui;
+    font-weight: 400;
+  font-style: normal;
+}
+.rubik-gemstones-regular {
+    font-family: "Rubik Gemstones", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
 html{
-    
+    background-color: rgb(234, 242, 239);
+    color: rgb(50, 13, 109);
+    font-family: "Metal Mania", system-ui;
+    scroll-behavior: smooth;
 }
 #navbar {
-    border: 5px solid black;
+    border: 5px solid rgb(50, 13, 109);
     display: flex;
     h1{
-        filter: drop-shadow(10px 10px 2px black);
+        filter: drop-shadow(10px 10px 2px rgb(50, 13, 109));
         text-align: left;
         margin-left: 20px;
     }
@@ -17,4 +50,17 @@ html{
             padding: 10px;
         }
     }
+}
+.header h2{
+    position: relative;
+    left: 100px;
+}
+#ea-nasir p{
+    position: relative;
+    left: 50px;
+}
+div{
+    margin-left: 10px;
+    position: relative;
+    left: 50px;
 }
