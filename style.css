@@ -3,6 +3,7 @@ rgb(234, 242, 239) = l
 rgb(50, 13, 109) = d
 */
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Rubik+Beastly&family=Rubik+Gemstones&family=Rubik+Glitch&family=Rubik+Wet+Paint&display=swap');
+
 .metal-mania-regular {
     font-family: "Metal Mania", system-ui;
     font-weight: 400;
@@ -28,13 +29,37 @@ rgb(50, 13, 109) = d
     font-weight: 400;
     font-style: normal;
 }
+.darkhtml{
+    background-color: rgb(50, 13, 109);
+    color: rgb(234, 242, 239);
+    a{
+        color: rgb(234, 242, 239);
+    }
+    a:active{
+        color: rgb(234, 242, 239);
+    }
+}
+.darknav{
+    border: 5px solid rgb(234, 242, 239);
+    h1{
+        filter: drop-shadow(10px 10px 2px rgb(234, 242, 239));
+    }
+    button{
+        color: rgb(234, 242, 239);
+        background-color: rgb(50, 13, 109);
+        border: 2px solid rgb(234, 242, 239);
+    }
+}
 html{
     background-color: rgb(234, 242, 239);
     color: rgb(50, 13, 109);
     font-family: "Metal Mania", system-ui;
     scroll-behavior: smooth;
 }
-#navbar {
+a{
+    color: rgb(50, 13, 109);
+}
+nav {
     border: 5px solid rgb(50, 13, 109);
     display: flex;
     h1{
@@ -50,17 +75,29 @@ html{
             padding: 10px;
         }
     }
+    #dbutton{
+        display: inline;
+        position: relative;
+        float: right;
+        border-radius: 30%;
+        svg{
+            padding: -60px;
+        }
+    }
 }
-.header h2{
-    position: relative;
-    left: 100px;
-}
-#ea-nasir p{
-    position: relative;
-    left: 50px;
+button{
+    background-color: rgb(234, 242, 239);
+    color: rgb(50, 13, 109);
+    border: 2px solid rgb(50, 13, 109);
 }
 div{
-    margin-left: 10px;
-    position: relative;
-    left: 50px;
+    margin-left: 15%;
+}
+@media (max-width: 800px){
+    html{
+        text-align: center;
+    }
+    div{
+        margin-left: 0%;
+    }
 }
